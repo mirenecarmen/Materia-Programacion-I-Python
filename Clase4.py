@@ -79,3 +79,86 @@ print(miVariab)
 miVariab /= 2
 print(miVariab)
 '''
+'''
+Algunos operadores aritmeticos nos permiten realizar operaciones sobre cadenas de texto
+operador             descripcion      ejemplo
++  concatenacion    'ho' + 'la'       ='hola'
+* repeticion         'hello world'*3  = 'hello world,hello world,hello world'
+
+los operadores de comparacion nos permiten saber si dos valores son iguales o distintos
+
+'''
+'''
+d=4
+b=6
+resultado = d == b # comprobamos si son iguales
+print(resultado)
+
+d=4
+b=4
+resultado = d == b # comprobamos si son iguales
+print(resultado)
+
+d=4
+b=4
+resultado = 3 == 8 # comprobamos si son iguales con numeros,es lo mismo
+print(resultado)
+
+d=4
+b=4
+resultado = d != b # comprobamos si son diferentes
+print(resultado)
+
+d=4
+b=9
+resultado = d > b # comprobamos si es mayor que
+print(resultado)
+
+d=4
+b=9
+resultado = d < b # comprobamos si es menor que
+print(resultado)
+
+d=4
+b=9
+resultado = d >= b # comprobamos si es mayor o igual que
+print(resultado) # da false
+
+d=4
+b=4
+resultado = d >= b # comprobamos si es mayor o igual que
+print(resultado) # da true
+
+# 4.4 Ejercicio 1 y 2
+
+ejercicio numero par o impar
+1-solicitamos que el usuario ingrese su numer
+2-este se asigna a una variable
+3-utilizaremos la estructura ifelse
+4-la formula : <num>%2 == 0 .Esta operacion nos dice si es un numero par
+5-si es True imprimimos que es par
+6-si es False imprimimos que es impar
+'''
+'''
+num = int(input("ingrese un numero:"))
+print(f'el residuo de la division es  {num % 2}')
+if num % 2 == 0:
+    print(f'el numero {num} es par')
+else:
+    print(f'el numero {num} es impar')
+'''
+
+# ejercicio:determinar si es mayor de edad
+# 1-pedir un numero al usuario
+# 2-almacenar el valor en una variable
+# 3-usar la estructura ifelse
+# 4-la formula es <nuM> >= 18
+# 5-True:eres mayor de edad,imprimir
+# 6-false:eres menor de edad,imprimir
+
+nuM = int(input("ingrese su edad:"))
+print(f'la edad ingresada es {nuM}')
+if nuM >= 18:
+    print(f'Usted es mayor de edad')
+else:
+    print(f'Usted es menor de edad')
