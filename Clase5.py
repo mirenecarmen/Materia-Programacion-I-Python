@@ -13,17 +13,17 @@ En este caso,solamente es una expresin o el valor de A que es un tipo booleano.
 y entonces el operador NOT simplemente lo que va a hacer es invertir el valor.
 Si el valor de A es verdadero ,entonces al aplicarle el operador NOt se convierte en False.
 Y si el valor de A es falso,al aplicarle el operador NOT,entonces se convierte en verdadero.
-'''
-#                             operadores logicos
-#operadores AND y OR son binarios,porque necesitan los dos operandos para poder ejecutarse
 
-#operador AND
+                           operadores logicos
+operadores AND y OR son binarios,porque necesitan los dos operandos para poder ejecutarse
+
+operador AND
 a = True
 b = True
 resultado = a and b
 print(resultado)
 
-# operador OR
+ operador OR
 a = True
 b = False
 resultado = a or b
@@ -34,9 +34,137 @@ b = False
 resultado = a or b
 print(resultado)
 
-# operador NOT es un operador unario,porque necesita solo un operando para ejecutarse
+ operador NOT es un operador unario,porque necesita solo un operando para ejecutarse
 
 a = False
 b = False
 resultado = not a
 print(resultado)
+
+
+4.6 Ejercicio: Valor dentro de un rango
+
+ejercicio :valor dentro de un rango
+1-pedimos al usuario un valor numerico
+2-verificar si el valor ingresado se encuentra dentro del rango del 0 al 5.
+3-la formula es <num> >= 0 and <num> <= 5
+
+
+
+valor = int(input("ingrese un numero entero:"))
+
+if valor>= 0 and valor<=5 :
+    print(f'el valor ingresado {valor} esta dentro del rango de 0 a 5.')
+else:
+    print(f'el valor ingresado {valor} no esta en el rango de 0 a 5.')
+
+4.7 Operadores or
+ejercicio operador OR
+La pregunta es ,si un padre puede asistir al juego de su hijo
+1-verificamos si tiene vacaciones
+2-verificamos si tiene un dia libre
+3-usar la estructura 'if else'con el operador OR
+4-imprimir
+
+
+vacaciones = False
+diaDescanso = False
+if vacaciones or diaDescanso:
+    print(f'puede asistir al juego')
+else:
+    print(f'tiene trabajo que hacer.')
+
+operador not
+
+vacaciones = False
+diaDescanso = True
+if not (vacaciones or diaDescanso):
+    print(f' tiene trabajo que hacer.')
+else:
+    print(f'puede asistir al juego')
+
+
+4.8 Ejercicio: Rango entre 20 y 30 años
+Sintaxis simplificada del operador And
+
+ejercicio:
+1-preguntar la
+2-si la edad esta dentro de los  20 o 30 esta dentro del rango.
+3-combinamos los operadores and y or para saber si el usuario esta dentro del
+rango o no.
+
+
+edad = int(input("digite su edad:"))
+veinte = edad >= 20 and edad < 30 # se almacena en la variable "veinte"
+print(veinte)
+treinta = edad >= 30 and edad < 40
+print(treinta)
+
+if veinte or treinta:
+    print("estas dentro de del rango de los (20'0) a (30'0) años") # sin la barra invertida
+else:
+    print('No estas dentro de del rango de los (20\'0) a (30\'0) años') #con la barra invertida se usa comilla doble
+
+
+edad = int(input("digite su edad:"))
+veinte = edad >= 20 and edad < 30 # se almacena en la variable "veinte"
+print(veinte)
+treinta = edad >= 30 and edad < 40
+print(treinta)
+
+if veinte :
+    print("estas dentro de del rango de los (20'0) años")
+elif treinta:
+    print("estas dentro de del rango de los (30'0) años")
+
+else:
+    print('No estas dentro de del rango de los (20\'0) a (30\'0) años')
+
+ #If else ANIDADO (cuidado con la identacion)
+
+edad = int(input("digite su edad:"))
+veinte = edad >= 20 and edad < 30 # se almacena en la variable "veinte"
+print(veinte)
+treinta = edad >= 30 and edad < 40
+print(treinta)
+
+if veinte or treinta:
+    if veinte:
+        print("estas dentro de del rango de los (20'0) años")
+    elif treinta:
+        print("estas dentro de del rango de los (30'0) años")
+    else:
+        print("no estas en el rango.")
+
+else:
+    print('No estas dentro de del rango de los (20\'0) a (30\'0) años')
+
+
+#una forma mas reducida es:
+
+edad = int(input("digite su edad:"))
+veinte = edad >= 20 and edad < 30 # se almacena en la variable "veinte"
+print(veinte)
+treinta = edad >= 30 and edad < 40
+print(treinta)
+
+if (edad >= 20 and edad < 30) or (edad >= 30 and edad < 40):
+   print("estas dentro de del rango de los (20'0) años")
+else:
+    print('No estas dentro de del rango de los (20\'0) a (30\'0) años')
+
+
+#sintaxis simplificada del AND
+edad = int(input("digite su edad:"))
+veinte = edad >= 20 and edad < 30 # se almacena en la variable "veinte"
+print(veinte)
+treinta = edad >= 30 and edad < 40
+print(treinta)
+
+if (20 <= edad < 30) or (30 <= edad < 40):
+   print("estas dentro de del rango de los (20'0) años")
+else:
+    print('No estas dentro de del rango de los (20\'0) a (30\'0) años')
+´´´
+
+#Ejercicio 1: Mayor de 2 números
