@@ -165,6 +165,27 @@ if (20 <= edad < 30) or (30 <= edad < 40):
    print("estas dentro de del rango de los (20'0) años")
 else:
     print('No estas dentro de del rango de los (20\'0) a (30\'0) años')
-´´´
 
-#Ejercicio 1: Mayor de 2 números
+
+--Ejercicio 1: Mayor de 2 números
+solicitar al usuario dos valores,determinar cual es el mayor.
+1-solicitar al usuario dos valores
+numero1(int)
+numero2(int)
+2-se debe imprimir el mayor de los dos
+(la salida debe ser identica a la siguiente).
+digite el valor para el numero 1:
+digite el valor para el numero 2:
+El numero mayor es: <numeroMayor>
+
+
+
+numero1 = int(input(f'digite el valor para el numero 1:'))
+numero2 = int(input(f'digite el valor para el numero 2:'))
+if numero1 > numero2:
+    print(f'el numero {numero1} es mayor que {numero2} ')
+else:
+    print(f' el numero {numero1} no es mayor al {numero2}')
+'''
+
+#--Ejercicio General: Tienda
