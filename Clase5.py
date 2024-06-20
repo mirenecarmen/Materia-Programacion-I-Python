@@ -186,6 +186,35 @@ if numero1 > numero2:
     print(f'el numero {numero1} es mayor que {numero2} ')
 else:
     print(f' el numero {numero1} no es mayor al {numero2}')
+
+
+--Ejercicio General: Tienda de Libros
+1-Mostrar: ingrese los siguientes datos del libro
+2-digite el nombre del libro
+3-digite el id del libro
+4-digite el precio del libro
+5-indicar si el envio es gratuito(True/False)
+6-Mostrar:
+Nombre:
+ID:
+Precio:
+Envio gratuito?:
 '''
 
-#--Ejercicio General: Tienda
+print('Digite los siguientes datos del libro')
+nombre = input('Digite el nombre del libro:')
+id = int(input('digite el ID del libro: '))
+precio = float(input('digite el precio del libro:'))
+envioGratuito = input('indicar si el envio del libro es gratuito(True/False): ')
+if envioGratuito == 'True':
+    envioGratuito = True
+elif envioGratuito == 'False':
+    envioGratuito = False
+else:
+    envioGratuito = 'El valor es incorrecto,debe escribir True/False'
+print(f'''
+        Nombre:{nombre}
+        Id:{id}
+        precio:{precio}
+        envio gratuito : {envioGratuito}
+''')
